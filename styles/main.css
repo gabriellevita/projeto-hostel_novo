@@ -1,7 +1,7 @@
 
 
 .cidade_titulo {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     line-height: 1.5em;
     color: var(--cinza);
@@ -23,7 +23,7 @@
     background: var(--verde);
     color: var(--offwhite);
     border-radius: 1em;
-    height: 82vw;
+    height: 95vw;
     width: 85%;
     margin: 0 auto;
     padding: 1em;
