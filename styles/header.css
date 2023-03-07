@@ -1,0 +1,39 @@
+
+.cabecalho {
+    background-image: url('../imagens/foto_hostel8.png');
+    background-position: bottom;
+    background-size: cover;
+}
+
+.cabecalho-nome {
+    font-family: var(--fonte-header);
+    font-size: 36px;
+    text-align: center;
+    color: var(--branco);
+    padding: 0.5em 0 0.2em 0;
+    
+}
+
+.cabecalho-subnome {
+    font-size: 18px;
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+    color: var(--branco);
+    padding-bottom: 0.5em;
+}
+
+.cabecalho-navegacao {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.cabecalho_navegacao-item {
+    font-family: var(--fonte-padrao);
+    font-size: 11px;
+    color: var(--branco);
+    text-decoration: none;
+    padding: 0.5em;  
+}
+

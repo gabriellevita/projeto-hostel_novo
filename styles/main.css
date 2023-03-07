@@ -1,0 +1,49 @@
+
+
+.cidade_titulo {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5em;
+    color: var(--cinza);
+    margin: 1em;
+}
+
+.cidade-negrito {
+    font-weight: 700;
+}
+
+.cidade-titulo-link {
+    text-decoration: none;
+    color: var(--cinza);
+}
+
+.container-cidade {
+    display: flex;
+    flex-direction: column;
+    background: var(--verde);
+    color: var(--offwhite);
+    border-radius: 1em;
+    height: 82vw;
+    width: 85%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.container-titulo {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 0.5em;
+}
+
+.container-texto {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.container-video {
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
