@@ -9,9 +9,10 @@
 
 
 :root {
-    --branco: white ;
-    --cinza: #727272 ; 
-    --offwhite: #f0ecec ; 
+    --branco: #FFFFFF;
+    --cinza: #e4e4e4 ; 
+    --cinza-escuro: #868686 ; 
+    --offwhite:#ECECEC; 
     --laranja: #f0b46cab ; 
     --verde: #2ABFB0 ; 
     --fonte-padrao: 'Quicksand', sans-serif;
