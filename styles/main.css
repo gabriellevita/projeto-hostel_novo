@@ -109,11 +109,12 @@
     text-align: center;
     text-transform: uppercase;
     padding: 2.5em 0 1.5em 0;
-
 }
 
 .swiper-slide img {
-    width: 100%;
+    width: 91% ;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .swiper-pagination {
