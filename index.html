@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa da Dri</title>
     <link rel="shortcut icon" href="imagens/iconehostel.ico" type="image/x-icon">
+    <!-- SWIPER JS -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <!-- CSS -->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -69,54 +74,90 @@
             </div>
         </section>
 
-        <section class="carrosel_ambientes">
-            <h2 class="carrossel-ambientes_titulo">Conheça nossos ambientes</h2>
-            <div class="imagens-carrossel_ambientes">
-                <img src="#" alt="#">
-                <img src="#" alt="#">
-                <img src="#" alt="#">
-                <img src="#" alt="#">
-            </div>
+        <section class="carrosel">
+            <h2 class="carrossel-titulo">Conheça nossos ambientes</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="imagens/hostel_sala.jpeg" alt="varanda"></div>
+                    <div class="swiper-slide"><img src="imagens/hostel_varanda7.jpg" alt="sala"></div>
+                    <div class="swiper-slide"><img src="imagens/hostel_varanda.jpeg" alt="area gourmet"></div>
+                    <div class="swiper-slide"><img src="imagens/hostel_varanda3.jpg" alt="cozinha" class="img-bugada"></div>
+                    
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+  
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>    
         </section>
 
         <section class="opcoes-ambientes">
             <h2 class="opcoes-ambientes_titulo">Nossos Quartos</h2>
-            <div>
-                <p class="opcoes-ambientes_subtitulo">Quartos compartilhados</p>
-                <p class="opcoes-ambientes_descricao">Opções de quarto com espaço para 8 ou 4 pessoas. Todos com ventilador e banheiro.</p>
-                <img src="#" alt="#">
-                <img src="#" alt="#">
-            </div>
+            <div class="container-ambientes">
+                <div>
+                    <p class="opcoes-ambientes_subtitulo">Compartilhados</p>
+                    <p class="opcoes-ambientes_descricao">Opções de quarto com espaço para 8 ou 4 pessoas. Todos com ventilador e banheiro.</p>
+                    <!-- <img src="#" alt="#">
+                    <img src="#" alt="#"> -->
+                </div>
             
-            <div>
-                <p class="opcoes-ambientes_subtitulo">Quarto Individual</p>
-                <p class="opcoes-ambientes_descricao">Opção de quarto com duas camas de solteiro, ventilador e uma linda vista da varanda.</p>
-                <img src="#" alt="#">
-            </div>
+                <div>
+                    <p class="opcoes-ambientes_subtitulo">Individual</p>
+                    <p class="opcoes-ambientes_descricao">Opção de quarto com duas camas de solteiro, ventilador e uma linda vista da varanda.  </p>
+                    <!-- <img src="#" alt="#"> -->
+                </div>
 
-            <div>
-                <p class="opcoes-ambientes_subtitulo">Suíte Privativa</p>
-                <p class="opcoes-ambientes_descricao">Suíte com cama de casal, frigobar e ar condicionado.</p>
-                <img src="#" alt="#">
+                <div>
+                    <p class="opcoes-ambientes_subtitulo">Suíte Privativa</p>
+                    <p class="opcoes-ambientes_descricao">Suíte com cama de casal, frigobar e ar condicionado.</p>
+                    <!-- <img src="#" alt="#"> -->
+                </div>
             </div>
         </section>
 
         <section class="localizacao">
+            <div class="container_localizacao">
                 <h2 class="localizacao-titulo">Onde estamos localizados</h2>
                 <p class="localizacao_descricao">
-                Nós estamos localizados na entrada principal de Caraguatuba, a 5 minutos da rodoviária. O bairro possui uma boa infraestrutura, contendo um mercado a 1 minuto a pé, um Posto de Saúde ao lado do Hostel e o <a href="https://guiadeareasprotegidas.sp.gov.br/ap/parque-estadual-serra-do-mar-nucleo-caraguatatuba/" target="_blank" rel="external">Parque Estadual Serra do Mar</a> com toda sua beleza somente a 5 minutos de distância.
+                Nós estamos localizados na entrada principal de Caraguatuba, a 5 minutos da rodoviária. O bairro possui uma boa infraestrutura, contendo um mercado a 1 minuto a pé, um Posto de Saúde ao lado do Hostel e o <a href="https://guiadeareasprotegidas.sp.gov.br/ap/parque-estadual-serra-do-mar-nucleo-caraguatatuba/" target="_blank" rel="external" class="localizacao_link">Parque Estadual Serra do Mar</a> com toda sua beleza somente a 5 minutos de distância.
                 </p>
-                <img src="#" alt="#" width="550" height="315">
+                <img src="imagens/hostel_frente.jpeg" alt="faixada do hostel" class="localizacao_imagem">
             </div>
         </section>
     </main>
 
     <hr>
 
-    <footer>
-        <p id="rodape">Informações de Contato</p>
-        <p class="rodape">Telefone e Whatsapp:<a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5511999009599" target="_blank"> (11) 99900-9599</a></p>
-        <p class="rodape">Endereço: <a href="http://www.google.com.br/maps/place/Av.+Am%C3%A9rico+Tim%C3%B3teo+do+Ros%C3%A1rio,+177+-+Rio+do+Ouro,+Caraguatatuba+-+SP,+11675-670/@-23.6073396,-45.4343142,15z/data=!3m1!4b1!4m5!3m4!1s0x94cd649befa9a1ed:0x34cb15917ce5c32b!8m2!3d-23.6073595!4d-45.4255594?hl=pt-BR" target="blank" rel="external"> Avenida Américo Timoteo do Rosário, 155, Rio do Ouro, Caraguatatuba, SP</a></p>
+    <footer class="rodape">
+        <h2 class="rodape-titulo">Informações de Contato:</h2>
+        <p class="rodape-item1">Telefone e Whatsapp: <a href="https://web.whatsapp.com/send?phone=5511999009599" target="_blank" class="rodape-numero"> (11) 99900-9599</a></p>
+        <p class="rodape-item2">Endereço: <a href="http://www.google.com.br/maps/place/Av.+Am%C3%A9rico+Tim%C3%B3teo+do+Ros%C3%A1rio,+177+-+Rio+do+Ouro,+Caraguatatuba+-+SP,+11675-670/@-23.6073396,-45.4343142,15z/data=!3m1!4b1!4m5!3m4!1s0x94cd649befa9a1ed:0x34cb15917ce5c32b!8m2!3d-23.6073595!4d-45.4255594?hl=pt-BR" target="blank" rel="external" class="rodape-endereco"> Avenida Américo Timoteo do Rosário, 155, Rio do Ouro, Caraguatatuba, SP</a></p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+        navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        autoplay: { //tirar o X 
+            delay: 2000,
+        },
+        
+    });
+    </script>
 </body>
+
 </html>

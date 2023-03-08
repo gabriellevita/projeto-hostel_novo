@@ -1,0 +1,23 @@
+
+hr {
+    margin: 0;
+}
+
+.rodape {
+    padding: 1em 1em 1.5em 1em;
+    color: black;
+}
+
+.rodape-titulo {
+    font-size: 18px;
+    padding-bottom: 0.5em;
+}
+
+.rodape-item1, .rodape-item2 {
+    color: var(--cinza-escuro);
+    padding: 0.5em 0;
+}
+
+.rodape-numero, .rodape-endereco {
+    color: var(--cinza-escuro);
+}
