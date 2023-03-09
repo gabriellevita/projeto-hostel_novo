@@ -36,3 +36,41 @@
     color: var(--branco); 
     text-decoration: none;
 }
+.item-nav {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+
+    .cabecalho {
+        height: 67vh;
+        padding-bottom: 0;
+    }
+
+    .cabecalho-nome {
+        font-size: 120px;
+        padding-top: 1em;
+        padding-bottom: 0.3em;
+    }
+
+    .cabecalho-subnome {
+        font-size: 50px;
+        padding-bottom: 1.5em;
+    }
+
+    .cabecalho-navegacao {
+        justify-content: space-around;
+    }
+
+    .cabecalho_navegacao-item {
+        display: none;
+    }
+
+    .item-nav {
+        display: block;
+        font-family: var(--fonte-padrao);
+        font-size: 19px;
+        color: var(--branco); 
+        text-decoration: none;
+    }
+}

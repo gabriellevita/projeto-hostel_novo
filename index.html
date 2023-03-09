@@ -21,20 +21,30 @@
     <header class="cabecalho">
         <h1 class="cabecalho-nome">Casa da Dri</h1>
         <p class="cabecalho-subnome">HOSPEDAGENS</p>
-        <ul class="cabecalho-navegacao">
-            <a href="#ambientes" class="cabecalho_navegacao-item">Ambientes </a>
+        <nav class="cabecalho-navegacao">
+            <a href="#ambientes" class="cabecalho_navegacao-item">Ambientes</a>
+            <a href="#ambientes" class="item-nav">Nossos Ambientes</a>
+
             <a href="#quartos" class="cabecalho_navegacao-item">Quartos</a>
-            <a href="#localizacao" class="cabecalho_navegacao-item"> Localização</a>
-            <a class="whatsapp-link cabecalho_navegacao-item" href="https://wa.me/5511999009599" target="_blank"><i class="fa fa-whatsapp"></i>Reservas</a>
-        </ul>
+            <a href="#quartos" class="item-nav">Nossos Quartos</a>
+
+            <a href="#localizacao" class="cabecalho_navegacao-item">Localização</a>
+            <a href="#localizacao"  class="item-nav">Nossa Localização</a>
+
+            <a class="cabecalho_navegacao-item" href="https://wa.me/5511999009599" target="_blank"><i class="fa fa-whatsapp"></i>Reservas</a>
+            <a href="https://wa.me/5511999009599"  class="item-nav">Faça sua Reserva</a>
     </header>
 
-    <main>
+    <main class="corpo">
         <section class="cidade">
-            <h2 class="cidade_titulo">Sinta-se em casa e aproveite o melhor de <a href="https://www.caragua.tur.br/" target="_blank" class="cidade-titulo-link"><strong class="cidade-negrito">Caraguatatuba</a></strong>!</h2>
+            <h2 class="cidade_titulo">Sinta-se em casa e aproveite o melhor de <a href="https://www.caragua.tur.br/" target="blank" rel="external" class="cidade-titulo-link"><strong class="cidade-negrito">Caraguatatuba</a></strong>!</h2>
             <div class="container-cidade">
                 <p class="container-titulo">CONHEÇA A CIDADE </p>
                 <p class="container-texto">Localizada no Litoral Norte de São Paulo, a cerca de 180km da capital paulista, Caraguatatuba é uma cidade ótima para quem procura boas praias e excelente estrutura turística e comercial. Sua protegida Mata Atlântica abriga trilhas e piscinas naturais que surpreendem a todos.</p>
+
+                <p class="container-text"><strong class="container-text_titulo">CONHEÇA A CIDADE</strong> <br> <br> 
+                <strong class="container-text_descricao">Localizada no Litoral Norte de São Paulo, a cerca de 180km da capital paulista, Caraguatatuba é uma cidade ótima para quem procura boas praias e excelente estrutura turística e comercial. Sua protegida Mata Atlântica abriga trilhas e piscinas naturais que surpreendem a todos.</strong></p>
+
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/5L4R0j27DRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="container-video"></iframe>
             </div>
         </section>
@@ -42,35 +52,45 @@
         <section>
             <h1 class="opcoes-casa">O que nós oferecemos</h1>
             <div class="opcoes-casa_itens">
-                <div class="container_opcoes-casa">
-                    <img src="imagens/cozinha.png" alt="icone cozinha" class="container_opcoes-casa-imagem">
-                    <p class="opcoes-casa_titulo">Cozinha</p>
+                <div class="opcoes-casa_itens1">
+                    <div class="container_opcoes-casa">
+                        <img src="imagens/cozinha.png" alt="icone cozinha" class="container_opcoes-casa-imagem">
+                        <p class="opcoes-casa_titulo">Cozinha</p>
+                    </div>
+                    <p class="opcoes-casa_descricao">Cozinha toda equipada com os utensílios básicos necessários para você poder cozinhar</p>
                 </div>
-                <p class="opcoes-casa_descricao">Cozinha toda equipada com os utensílios básicos necessários para você poder cozinhar</p>
             
-                <div class="container_opcoes-casa">
-                    <img src="imagens/sala-de-estar.png" alt="icone sala"class="container_opcoes-casa-imagem">
-                    <p class="opcoes-casa_titulo">Sala</p>
+                <div class="opcoes-casa_itens2">
+                    <div class="container_opcoes-casa">
+                        <img src="imagens/sala-de-estar.png" alt="icone sala"class="container_opcoes-casa-imagem">
+                        <p class="opcoes-casa_titulo">Sala</p>
+                    </div>
+                    <p class="opcoes-casa_descricao">Uma sala aconchegante com TV para aquela sessão de filmes<p>
                 </div>
-                <p class="opcoes-casa_descricao">Uma sala aconchegante com TV para aquela sessão de filmes<p>
-            
-                <div class="container_opcoes-casa">
-                    <img src="imagens/churrasqueira.png" alt="icone churrasqueira" class="container_opcoes-casa-imagem">
-                    <p class="opcoes-casa_titulo">Área Gourmet </p>
+
+                <div class="opcoes-casa_itens3">
+                    <div class="container_opcoes-casa">
+                        <img src="imagens/churrasqueira.png" alt="icone churrasqueira" class="container_opcoes-casa-imagem">
+                        <p class="opcoes-casa_titulo">Área Gourmet </p>
+                    </div>
+                    <p class="opcoes-casa_descricao">Área espaçosa com churrasqueira, geladeira, fogão e tudo o que você precisa para se divertir com sua família e amigos</p>
                 </div>
-                <p class="opcoes-casa_descricao">Área espaçosa com churrasqueira, mesas, cadeiras, geladeira, fogão e tudo o que você precisa para se divertir com sua família e amigos</p>
-            
-                <div class="container_opcoes-casa">
-                    <img src="imagens/area-de-descanso.png" alt="icone varanda" class="container_opcoes-casa-imagem">
-                    <p class="opcoes-casa_titulo">Varanda Espaçosa </p>
+
+                <div class="opcoes-casa_itens4">
+                    <div class="container_opcoes-casa">
+                        <img src="imagens/area-de-descanso.png" alt="icone varanda" class="container_opcoes-casa-imagem">
+                        <p class="opcoes-casa_titulo">Varanda Espaçosa </p>
+                    </div>
+                    <p class="opcoes-casa_descricao">Uma varanda com redes e mesinhas para descansar</p>
                 </div>
-                <p class="opcoes-casa_descricao">Uma varanda com redes e mesinhas para tirar aquele descanso</p>
-            
-                <div class="container_opcoes-casa">
-                    <img src="imagens/sinal-wifi.png" alt="icone wifi" class="container_opcoes-casa-imagem">
-                    <p class="opcoes-casa_titulo">Wifi</p>
-                </div>
+
+                <div class="opcoes-casa_itens5">
+                    <div class="container_opcoes-casa">
+                        <img src="imagens/sinal-wifi.png" alt="icone wifi" class="container_opcoes-casa-imagem">
+                        <p class="opcoes-casa_titulo">Wifi</p>
+                    </div>
                     <p class="opcoes-casa_descricao">Internet de qualidade para você navegar, trabalhar ou estudar</p>
+                </div>
             </div>
         </section>
 
@@ -129,6 +149,10 @@
                 <p class="localizacao_descricao">
                 Nós estamos localizados na entrada principal de Caraguatuba, a 5 minutos da rodoviária. O bairro possui uma boa infraestrutura, contendo um mercado a 1 minuto a pé, um Posto de Saúde ao lado do Hostel e o <a href="https://guiadeareasprotegidas.sp.gov.br/ap/parque-estadual-serra-do-mar-nucleo-caraguatatuba/" target="_blank" rel="external" class="localizacao_link">Parque Estadual Serra do Mar</a> com toda sua beleza somente a 5 minutos de distância.
                 </p>
+
+                <p class="localizacao-text"><strong class="localizacao-text_titulo">Onde estamos localizados</strong> <br> <br> 
+                    <strong class="localizacao-text_descricao">Nós estamos localizados na entrada principal de Caraguatuba, a 5 minutos da rodoviária. O bairro possui uma boa infraestrutura, contendo um mercado a 1 minuto a pé, um posto de saúde ao lado do Hostel, uma farmárcia e o <a href="https://guiadeareasprotegidas.sp.gov.br/ap/parque-estadual-serra-do-mar-nucleo-caraguatatuba/" target="_blank" rel="external" class="localizacao_link">Parque Estadual Serra do Mar</a> com toda sua beleza somente a 5 minutos de distância.</strong></p>
+
                 <img src="imagens/hostel_frente.jpeg" alt="faixada do hostel" class="localizacao_imagem">
             </div>
         </section>
@@ -137,9 +161,15 @@
     <hr>
 
     <footer class="rodape">
-        <h2 class="rodape-titulo">Informações de Contato:</h2>
-        <p class="rodape-item1">Telefone e Whatsapp: <a href="https://web.whatsapp.com/send?phone=5511999009599" target="_blank" class="rodape-numero"> (11) 99900-9599</a></p>
-        <p class="rodape-item2">Endereço: <a href="http://www.google.com.br/maps/place/Av.+Am%C3%A9rico+Tim%C3%B3teo+do+Ros%C3%A1rio,+177+-+Rio+do+Ouro,+Caraguatatuba+-+SP,+11675-670/@-23.6073396,-45.4343142,15z/data=!3m1!4b1!4m5!3m4!1s0x94cd649befa9a1ed:0x34cb15917ce5c32b!8m2!3d-23.6073595!4d-45.4255594?hl=pt-BR" target="blank" rel="external" class="rodape-endereco"> Avenida Américo Timoteo do Rosário, 155, Rio do Ouro, Caraguatatuba, SP</a></p>
+        <div class="informacoes">
+            <h2 class="rodape-titulo">Informações de Contato</h2>
+            <p class="rodape-item1">Telefone e Whatsapp: <a href="https://web.whatsapp.com/send?phone=5511999009599" target="_blank" class="rodape-numero"> (11) 99900-9599</a></p>
+            <p class="rodape-item2">Endereço: <a href="http://www.google.com.br/maps/place/Av.+Am%C3%A9rico+Tim%C3%B3teo+do+Ros%C3%A1rio,+177+-+Rio+do+Ouro,+Caraguatatuba+-+SP,+11675-670/@-23.6073396,-45.4343142,15z/data=!3m1!4b1!4m5!3m4!1s0x94cd649befa9a1ed:0x34cb15917ce5c32b!8m2!3d-23.6073595!4d-45.4255594?hl=pt-BR" target="blank" rel="external" class="rodape-endereco"> Avenida Américo Timoteo do Rosário, 155, Rio do Ouro, Caraguatatuba, SP</a></p>
+        </div>
+        <div class="redes-sociais">
+            <h2 class="redes-sociais-titulo">Nos siga nas redes sociais</h2>
+            <a href="https://www.instagram.com/casadadri.praia/" target="blank" rel="external"><img src="imagens/instagram2.png" alt="logo do instagram" class="redes-sociais_logo"></a>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

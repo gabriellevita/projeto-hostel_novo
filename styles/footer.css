@@ -5,19 +5,29 @@ hr {
 
 .rodape {
     padding: 1em 1em 1.5em 1em;
-    color: black;
 }
 
 .rodape-titulo {
-    font-size: 18px;
+    font-size: 14px;
     padding-bottom: 0.5em;
 }
 
 .rodape-item1, .rodape-item2 {
+    font-size: 13px;
     color: var(--cinza-escuro);
     padding: 0.5em 0;
 }
 
 .rodape-numero, .rodape-endereco {
     color: var(--cinza-escuro);
+}
+
+.redes-sociais-titulo {
+    font-size: 14px;
+    color: black;
+    padding: 1em 5em 0.5em 0;
+}
+
+.redes-sociais_logo {
+    width: 7%;
 }

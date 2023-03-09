@@ -49,11 +49,13 @@
     margin-bottom: 1em;
 }
 
+.container-text {
+    display: none;
+}
+
 /* SECTION OPÇÕES CASA */
 
 .opcoes-casa {
-    display: flex;
-    white-space: nowrap;
     color: var(--cinza-escuro);
     font-size: 17px;
     font-weight: 700;
@@ -61,7 +63,7 @@
     text-transform: uppercase;
     background-color: var(--cinza);
     border-radius: 1em;
-    padding: 0.7em 3em;
+    padding: 0.7em 2em;
     margin: 2em 2.5em 1.5em 2.5em;
 }
 
@@ -75,7 +77,7 @@
 
 .opcoes-casa_titulo {
     color: var(--cinza-escuro);
-    font-weight: 400 ;
+    font-weight: 500 ;
     text-transform: uppercase;
     padding: 0.5em;
 }
@@ -113,7 +115,7 @@
 
 .swiper-slide img {
     width: 91% ;
-    padding-left: 1em;
+    padding-left: 1.1em;
     padding-right: 1em;
 }
 
@@ -141,15 +143,14 @@
 }
 
 .opcoes-ambientes_titulo {
-    display: flex;
-    white-space: nowrap;
     color: var(--cinza-escuro);
     font-size: 17px;
     font-weight: 700;
+    text-align: center;
     text-transform: uppercase;
     background-color: var(--cinza);
     border-radius: 1em;
-    padding: 0.7em 4.5em;
+    padding: 0.7em 2em;
     margin: 2em 2.5em 1.5em 2.5em;
 }
 
@@ -208,4 +209,170 @@
     width: 100%;
     height: 50%;
     margin-top: 1em;
+}
+
+.localizacao-text {
+    display: none;
+}
+
+
+
+
+@media screen and (min-width: 1280px) {
+
+    /* SECTION CIDADE */ 
+
+    .cidade_titulo {
+        font-size: 38px;
+        padding: 0.5em;
+    }
+
+    .container-cidade {
+        flex-direction: row;
+        height: 26vw;
+        width: 85%;
+    }
+
+    .container-titulo, .container-texto {
+        display: none;
+    }
+
+    .container-text {
+        display: block;
+        text-align: center;
+        padding-right: 3em;
+        padding-top: 5em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .container-text_titulo {
+        font-size: 25px;
+        font-weight: 700;
+        padding-bottom: 0.5em;
+    } 
+
+    .container-text_descricao {
+        font-size: 17px;
+        line-height: 1.8em;
+        margin-top: 5em;
+    }
+
+    .container-video {
+        width: 200%;
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+
+    /* SECTION OPÇÕES CASA */
+
+    .opcoes-casa {
+        font-size: 20px;
+        padding: 1em;
+        margin: 4em 6em 2em 6em;
+    }
+
+    .opcoes-casa_itens1, .opcoes-casa_itens2, .opcoes-casa_itens3, .opcoes-casa_itens4, .opcoes-casa_itens5  {
+        width: 25vw;
+        padding: 1em;
+    }
+
+    .opcoes-casa_itens {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        height: 70vh;
+    }
+
+    .opcoes-casa_titulo {
+        font-size: 18px;
+        padding-bottom: 0;
+    }
+
+    .opcoes-casa_descricao {
+        padding-top: 1em;
+        white-space: wrap;
+        line-height: 1.7em;
+    }
+
+    /* SECTION CARROSSEL */
+
+        .carrosel {
+            display: flex;
+            align-items: center;
+            padding: 5em;
+        }
+
+        .carrossel-titulo {
+            font-size: 25px;
+            color: var(--offwhite);
+            background: var(--verde);
+            border-radius: 40px;
+            padding: 1em 3em;
+        }
+
+        .swiper {
+            width: 40vw;
+        }
+
+        /* SECTION AMBIENTES */ 
+
+        .opcoes-ambientes_titulo {
+            font-size: 20px;
+            padding: 1em;
+            margin: 0.5em 6em 2em 6em;
+        }
+
+        .container-ambientes {
+           padding: 2em 0;
+        }
+
+        .opcoes-ambientes_subtitulo {
+            font-size: 18px;
+            padding: 0.5em 0 1em 0;
+        }
+
+        .opcoes-ambientes_descricao {
+            padding: 0 0 2em 0;
+        }
+
+
+        /* SECTION LOCALIZACAO */ 
+
+    .container_localizacao {
+        flex-direction: row;
+        height: 26vw;
+        width: 85%;
+    }
+
+    .localizacao-titulo, .localizacao_descricao {
+        display: none;
+    }
+
+    .localizacao-text {
+        display: block;
+        text-align: center;
+        padding-right: 3em;
+        padding-top: 5em;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    .localizacao-text_titulo {
+        font-size: 25px;
+        font-weight: 700;
+        text-transform: uppercase;
+    } 
+
+    .localizacao-text_descricao {
+        font-size: 17px;
+        line-height: 1.8em;
+    }
+
+    .localizacao_imagem {
+        width: 150vw;
+        height: 55vh;
+    }
 }
