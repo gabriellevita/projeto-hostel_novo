@@ -31,3 +31,19 @@ hr {
 .redes-sociais_logo {
     width: 7%;
 }
+
+@media screen and (min-width: 1280px) {
+
+    .rodape{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .rodape-titulo, .redes-sociais-titulo {
+        font-size: 16px;
+    }
+
+    .rodape-item1, .rodape-item2 {
+        font-size: 14px;
+    }
+}
