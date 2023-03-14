@@ -24,7 +24,6 @@
     background: var(--verde);
     color: var(--offwhite);
     border-radius: 1em;
-    height: 95vw;
     width: 85%;
     margin: 0 auto;
     padding: 1em;
@@ -180,7 +179,7 @@
     background: var(--verde);
     color: var(--offwhite);
     border-radius: 1em;
-    height: 95vw;
+    height: auto;
     width: 85%;
     margin: 2.5em auto;
     padding: 1.5em;
@@ -208,7 +207,7 @@
 
 .localizacao_imagem {
     width: 100%;
-    height: 60%;
+    height: 25vh;
     margin-top: 1em;
 }
 
@@ -218,18 +217,10 @@
 
 
 @media screen and (min-width: 768px) {
-    .container-cidade {
-        height: 60vh;
-    }
 
     .swiper {
         width: 65vw;
     }
-
-    .container_localizacao {
-        height: 60vh;
-    }
-
     .localizacao_imagem {
         width: 55%;
     }
@@ -248,8 +239,6 @@
 
     .container-cidade {
         flex-direction: row;
-        height: 60vh;
-        width: 85%;
     }
 
     .container-titulo, .container-texto {
@@ -360,7 +349,6 @@
 
     .container_localizacao {
         flex-direction: row;
-        height: 60vh;
     }
 
     .localizacao-titulo, .localizacao_descricao {
@@ -396,20 +384,19 @@
 
 
 @media screen and (min-width: 1440px) {
-    .container-cidade {
-        height: 60vh;
-    }
 
     .container-text {
         padding-top: 6em;
+        padding-bottom: 6em;
     }
 
-    .swiper {
+   .swiper {
         width: 45vw;
     }
 
-    .container_localizacao {
-        height: 55vh;
+    .localizacao-text {
+        padding-top: 2em;
+        padding-bottom: 2em;
     }
 
     .localizacao_imagem {
@@ -428,7 +415,8 @@
     }
 
     .container-text {
-        padding-top: 5.5em;
+        padding-top: 8em;
+        padding-bottom: 8em;
     }
 
     .container-text_titulo {
@@ -442,7 +430,6 @@
     .container-video {
         padding-top: 1em;
         padding-right: 1em;
-        height: 55vh;
     }
 
 
@@ -496,9 +483,6 @@
 
     /* SECTION LOCALIZACAO */ 
 
-    .localizacao-text {
-        padding-top: 5.5em;
-    }
 
     .localizacao-text_titulo {
         font-size: 35px;
@@ -512,7 +496,7 @@
         padding-top: 2em;
         padding-right: 1em;
         padding-bottom: 3em;
-        height: 55vh;
+        width: 110vw;
     }
 }
 
@@ -524,12 +508,9 @@
         font-size: 65px;
     }
 
-    .container-cidade {
-        height: 62vh;
-    }
-
     .container-text {
-        padding-top: 7em;
+        padding-top: 10em;
+        padding-bottom: 10em;
     }
 
     .container-text_titulo {
@@ -583,10 +564,6 @@
 
     /* SECTION LOCALIZACAO */ 
 
-    .container_localizacao {
-        height: 65vh;
-    }
-
     .localizacao-text_titulo {
         font-size: 50px;
     }
@@ -594,4 +571,5 @@
     .localizacao-text_descricao {
         font-size: 35px;
     }
+
 }
