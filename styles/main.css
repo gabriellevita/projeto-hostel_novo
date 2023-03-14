@@ -114,9 +114,8 @@
 }
 
 .swiper-slide img {
-    width: 91% ;
-    padding-left: 1.1em;
-    padding-right: 1em;
+    width: 92%;
+    margin: 1em;
 }
 
 .swiper-pagination {
@@ -322,9 +321,12 @@
         }
 
         .swiper {
-            width: 52vw;
+            width: 45%;
         }
 
+        .swiper-button-prev, .swiper-button-next {
+            display: block;
+        }
 
         /* SECTION AMBIENTES */ 
 
