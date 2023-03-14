@@ -25,25 +25,75 @@ hr {
 .redes-sociais-titulo {
     font-size: 14px;
     color: black;
-    padding: 1em 5em 0.5em 0;
+    padding: 1em 0 0.5em 0;
 }
 
 .redes-sociais_logo {
     width: 7%;
 }
 
-@media screen and (min-width: 1280px) {
+
+@media screen and (min-width: 1024px) {
 
     .rodape{
         display: flex;
-        justify-content: flex-end;
+        padding-left: 5em;
     }
 
     .rodape-titulo, .redes-sociais-titulo {
         font-size: 16px;
+        text-align: center;
+        padding-top: 1.5em;
     }
 
     .rodape-item1, .rodape-item2 {
         font-size: 14px;
+        text-align: center;
+    }
+
+    .redes-sociais {
+        text-align: center;
+    }
+
+    .redes-sociais_logo {
+        padding-top: 0.5em;
+    }
+}
+
+
+
+@media screen and (min-width: 1728px) {
+
+    .rodape{
+        padding-left: 8em;
+        padding-bottom: 3em;
+    }
+
+    .rodape-titulo, .redes-sociais-titulo {
+        font-size: 22px; 
+    }
+
+    .rodape-item1, .rodape-item2 {
+        font-size: 20px;
+        padding-right: 3em;
+    }
+
+    .redes-sociais_logo {
+        width: 9%;
+    }
+}
+
+
+@media screen and (min-width: 2560px) {
+    .rodape-titulo, .redes-sociais-titulo {
+        font-size: 32px; 
+    }
+
+    .rodape-item1, .rodape-item2 {
+        font-size: 28px;
+    }
+
+    .redes-sociais_logo {
+        width: 12%;
     }
 }

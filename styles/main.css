@@ -176,6 +176,7 @@
 .container_localizacao {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background: var(--verde);
     color: var(--offwhite);
     border-radius: 1em;
@@ -207,7 +208,7 @@
 
 .localizacao_imagem {
     width: 100%;
-    height: 50%;
+    height: 60%;
     margin-top: 1em;
 }
 
@@ -216,20 +217,38 @@
 }
 
 
+@media screen and (min-width: 768px) {
+    .container-cidade {
+        height: 60vh;
+    }
+
+    .swiper {
+        width: 65vw;
+    }
+
+    .container_localizacao {
+        height: 60vh;
+    }
+
+    .localizacao_imagem {
+        width: 55%;
+    }
+}
 
 
-@media screen and (min-width: 1280px) {
+
+@media screen and (min-width: 1024px) {
 
     /* SECTION CIDADE */ 
 
     .cidade_titulo {
-        font-size: 38px;
+        font-size: 35px;
         padding: 0.5em;
     }
 
     .container-cidade {
         flex-direction: row;
-        height: 26vw;
+        height: 60vh;
         width: 85%;
     }
 
@@ -241,7 +260,7 @@
         display: block;
         text-align: center;
         padding-right: 3em;
-        padding-top: 8em;
+        padding-top: 4em;
         margin-left: 2em;
         margin-right: 2em;
     }
@@ -249,20 +268,18 @@
     .container-text_titulo {
         font-size: 25px;
         font-weight: 700;
-        padding-bottom: 0.5em;
     } 
 
     .container-text_descricao {
         font-size: 17px;
         line-height: 1.8em;
-        margin-top: 5em;
     }
 
     .container-video {
-        width: 200%;
-        margin-top: 4em;
-        margin-bottom: 1em;
+        width: 100%;
+        height: auto;
     }
+
 
     /* SECTION OPÇÕES CASA */
 
@@ -273,8 +290,8 @@
     }
 
     .opcoes-casa_itens1, .opcoes-casa_itens2, .opcoes-casa_itens3, .opcoes-casa_itens4, .opcoes-casa_itens5  {
-        width: 25vw;
-        padding: 1em;
+        width: 30vw;
+        height: 35vh;
     }
 
     .opcoes-casa_itens {
@@ -283,18 +300,17 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        height: 70vh;
+        height: 75vh;
+        padding-top: 1.5em;
     }
 
     .opcoes-casa_titulo {
         font-size: 18px;
-        padding-bottom: 0;
     }
 
     .opcoes-casa_descricao {
-        padding-top: 1em;
-        white-space: wrap;
-        line-height: 1.7em;
+        padding-top: 0.5em;     
+        line-height: 1.6em;
     }
 
     /* SECTION CARROSSEL */
@@ -302,20 +318,21 @@
         .carrosel {
             display: flex;
             align-items: center;
-            padding: 5em;
+            padding: 5em 0 4em 1.5em;
         }
 
         .carrossel-titulo {
             font-size: 25px;
             color: var(--offwhite);
             background: var(--verde);
-            border-radius: 40px;
-            padding: 1em 3em;
+            border-radius: 50px;
+            padding: 1em 1.5em;
         }
 
         .swiper {
-            width: 40vw;
+            width: 52vw;
         }
+
 
         /* SECTION AMBIENTES */ 
 
@@ -343,8 +360,7 @@
 
     .container_localizacao {
         flex-direction: row;
-        height: 26vw;
-        width: 85%;
+        height: 60vh;
     }
 
     .localizacao-titulo, .localizacao_descricao {
@@ -355,7 +371,7 @@
         display: block;
         text-align: center;
         padding-right: 3em;
-        padding-top: 8em;
+        padding-top: 1.5em;
         margin-left: 2em;
         margin-right: 2em;
     }
@@ -368,11 +384,214 @@
 
     .localizacao-text_descricao {
         font-size: 17px;
-        line-height: 1.8em;
+        line-height: 1.7em;
     }
 
     .localizacao_imagem {
-        width: 150vw;
+        width: 45%;
+        height: auto;
+    }
+}
+
+
+
+@media screen and (min-width: 1440px) {
+    .container-cidade {
+        height: 60vh;
+    }
+
+    .container-text {
+        padding-top: 6em;
+    }
+
+    .swiper {
+        width: 45vw;
+    }
+
+    .container_localizacao {
         height: 55vh;
+    }
+
+    .localizacao_imagem {
+        height: 50vh;
+    }
+}
+
+
+
+@media screen and (min-width: 1728px) {
+
+    /* SECTION CIDADE */ 
+
+    .cidade_titulo {
+        font-size: 50px;
+    }
+
+    .container-text {
+        padding-top: 5.5em;
+    }
+
+    .container-text_titulo {
+        font-size: 35px;
+    }
+
+    .container-text_descricao {
+        font-size: 22px;
+    }
+
+    .container-video {
+        padding-top: 1em;
+        padding-right: 1em;
+        height: 55vh;
+    }
+
+
+    /* SECTION OPÇÕES CASA */
+
+    .opcoes-casa {
+        font-size: 28px;
+    }
+
+    .opcoes-casa_itens {
+        padding-top: 2.5em;
+    }
+
+    .opcoes-casa_titulo {
+        font-size: 24px;
+    }
+
+    .opcoes-casa_descricao {
+        font-size: 20px;
+        padding-top: 0.5em;     
+        line-height: 1.6em;
+    }
+
+
+    /* SECTION CARROSSEL */ 
+
+    .carrossel-titulo {
+        font-size: 35px;
+        margin-left: 1em;
+    }
+
+    .swiper {
+        width: 45vw;
+    }
+
+
+     /* SECTION AMBIENTES */ 
+
+     .opcoes-ambientes_titulo {
+        font-size: 28px;
+    }
+
+     .opcoes-ambientes_subtitulo {
+        font-size: 24px;
+    }
+
+    .opcoes-ambientes_descricao {
+        font-size: 20px;
+    }
+
+
+    /* SECTION LOCALIZACAO */ 
+
+    .localizacao-text {
+        padding-top: 5.5em;
+    }
+
+    .localizacao-text_titulo {
+        font-size: 35px;
+    }
+
+    .localizacao-text_descricao {
+        font-size: 22px;
+    }
+
+    .localizacao_imagem {
+        padding-top: 2em;
+        padding-right: 1em;
+        padding-bottom: 3em;
+        height: 55vh;
+    }
+}
+
+
+@media screen and (min-width: 2560px) {
+    /* SECTION CIDADE */ 
+
+    .cidade_titulo {
+        font-size: 65px;
+    }
+
+    .container-cidade {
+        height: 62vh;
+    }
+
+    .container-text {
+        padding-top: 7em;
+    }
+
+    .container-text_titulo {
+        font-size: 50px;
+    }
+
+    .container-text_descricao {
+        font-size: 35px;
+    }
+
+
+    /* SECTION OPÇÕES CASA */
+
+    .opcoes-casa {
+        font-size: 38px;
+    }
+
+    .opcoes-casa_titulo {
+        font-size: 34px;
+    }
+
+    .opcoes-casa_descricao {
+        font-size: 30px;
+        padding-top: 0.5em;     
+        line-height: 1.6em;
+    }
+
+
+    /* SECTION CARROSSEL */ 
+
+    .carrossel-titulo {
+        font-size: 50px;
+        margin-left: 2em;
+    }
+
+
+     /* SECTION AMBIENTES */ 
+
+     .opcoes-ambientes_titulo {
+        font-size: 38px;
+    }
+
+     .opcoes-ambientes_subtitulo {
+        font-size: 34px;
+    }
+
+    .opcoes-ambientes_descricao {
+        font-size: 30px;
+    }
+
+
+    /* SECTION LOCALIZACAO */ 
+
+    .container_localizacao {
+        height: 65vh;
+    }
+
+    .localizacao-text_titulo {
+        font-size: 50px;
+    }
+
+    .localizacao-text_descricao {
+        font-size: 35px;
     }
 }
