@@ -27,7 +27,7 @@
 .cabecalho-navegacao {
     display: flex;
     align-items: flex-end;
-    justify-content: space-between;  
+    justify-content: space-around;  
 }
 
 .cabecalho_navegacao-item {
@@ -51,10 +51,6 @@
     .cabecalho-subnome {
         font-size: 50px;
         padding-bottom: 1.5em;
-    }
-
-    .cabecalho-navegacao {
-        justify-content: space-between;
     }
 
     .cabecalho_navegacao-item {
@@ -82,7 +78,6 @@
     }
 
     .cabecalho-navegacao {
-        justify-content: space-around;
         padding-bottom: 1em;
     }
 
