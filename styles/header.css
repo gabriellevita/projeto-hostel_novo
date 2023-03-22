@@ -36,6 +36,7 @@
     color: var(--branco); 
     text-decoration: none;
 }
+
 .item-nav {
     display: none;
 }
@@ -63,6 +64,12 @@
         font-size: 18px;
         color: var(--branco); 
         text-decoration: none;
+        padding: .5em;
+    }
+
+    .item-nav:hover {
+        background-color: rgba(200, 224, 224, 0.24);
+        border-radius: 10px;
     }
 }
 

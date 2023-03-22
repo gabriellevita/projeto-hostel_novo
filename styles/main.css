@@ -18,6 +18,10 @@
     color: var(--cinza-escuro);
 }
 
+.cidade-titulo-link:hover {
+    text-decoration: underline;
+}
+
 .container-cidade {
     display: flex;
     flex-direction: column;
@@ -203,6 +207,10 @@
     text-decoration: none;
     color: var(--offwhite);
     font-weight: 700;
+}
+
+.localizacao_link:hover {
+    text-decoration: underline;
 }
 
 .localizacao_imagem {
